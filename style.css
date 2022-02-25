@@ -33,17 +33,38 @@ p {
     color: hsl(220, 15%, 55%);
 }
 
-@media only screen and (min-width:375px) {
-    .text-card {
-        border: transparent;
-        padding: 20px;
-        margin-top: 0px;
-    }
-    .qr-card {
-        border: transparent;
-        border-radius: 5%;
-        margin-top: 0px;
-    }
+.full-card {
+    border: solid rgb(192, 183, 192);
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20%;
+    background-color: hsl(212, 45%, 89%);
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+
+.inner-card {
+    border: solid white;
+    border-radius: 3%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10%;
+}
+
+.qr-card {
+    border: transparent;
+    border-radius: 5%;
+    margin-top: 0px;
+}
+
+.text-card {
+    border: transparent;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 375px) {
     .full-card {
         border: solid rgb(192, 183, 192);
         padding-top: 20%;
@@ -51,12 +72,24 @@ p {
         padding-right: 5%;
         padding-bottom: 20%;
         background-color: hsl(212, 45%, 89%);
-        width: 375px;
+        width: 100vw;
+        height: auto;
+        margin-right: 1%;
     }
     .inner-card {
         border: solid white;
         border-radius: 3%;
         background-color: hsl(0, 0%, 100%);
         padding: 10%;
+    }
+    .qr-card {
+        border: transparent;
+        border-radius: 5%;
+        margin-top: 0px;
+    }
+    .text-card {
+        border: transparent;
+        padding: 20px;
+        margin-top: 0px;
     }
 }
